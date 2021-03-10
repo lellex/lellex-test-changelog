@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/lellex/lellex-test-changelog/compare/v2.0.3...v3.0.0) (2021-03-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Try to create a release
+
+### Bug Fixes
+
+* Try to create a release ([7653533](https://github.com/lellex/lellex-test-changelog/commit/7653533cf17e89825b831898bbaf3375eef03123))
+
 ### [2.0.3](https://github.com/lellex/lellex-test-changelog/compare/v2.0.2...v2.0.3) (2021-03-10)
 
 
