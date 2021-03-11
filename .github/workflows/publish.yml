@@ -24,7 +24,9 @@ jobs:
         uses: 'phips28/gh-action-bump-version@master'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+        with:
+          skip-tag: 'true'
+      
       - name: Bump new tag
         id: tag_version
         uses: mathieudutour/github-tag-action@v5.3
