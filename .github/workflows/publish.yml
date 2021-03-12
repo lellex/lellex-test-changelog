@@ -47,6 +47,7 @@ jobs:
         uses: mathieudutour/github-tag-action@v5.3
         with:
           custom_tag: ${{ steps.version-bump.outputs.newTag }}
+          tag_prefix: ""
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
