@@ -29,14 +29,16 @@ jobs:
           skip-tag: 'true'
           commit-message: 'CI: bumps version to {{version}} [skip ci]'
 
-      - name: Get output
-        run: echo "Output ${{ steps.bump_version.outputs }}"
-      
+      - name:  'Output Step'
+        env:
+          NEW_TAG: ${{ steps.version-bump.outputs.newTag }}
+        run: echo "new tag $NEW_TAG"
+
       - name: Bump new tag
         id: tag_version
         uses: mathieudutour/github-tag-action@v5.3
         with:
-          custom_tag: "v12.0.0"
+          custom_tag: ${{ steps.version-bump.outputs.newTag }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
